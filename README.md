@@ -30,3 +30,9 @@
 │   └── prime_number_sieve.c     # (예: 에라토스테네스 구현 파일)
 ├── test/                         # 실행 결과 / 로그 등 (필요시 사용)
 └── .vscode/                      # VSCode 빌드/디버그 설정
+
+## 📦 설치 및 실행 방법 (Installation & Usage)
+
+이 프로젝트는 리눅스/유닉스 환경(macOS 포함)에서 실행하는 것을 권장합니다.
+
+```gcc -o prime main.c -lm
