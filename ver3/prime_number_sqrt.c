@@ -7,7 +7,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/time.h>
-#include <math.h>
 
 #define MAX 100000000  // 저장할 수 있는 소수 개수의 최대값
 
@@ -15,9 +14,9 @@ long long get_micro_time(void);
 
 int main(void)
 {
-    int n = 0;                 // 최댓값 2,147,483,647
-    int *p = malloc(MAX * sizeof(int));   // 소수 저장용
-    int idx = 0;               // 실제 저장한 소수 개수
+    int n = 0;                         // 최댓값 2,147,483,647 (int 한계)
+    int *p = malloc(MAX * sizeof(int)); // 소수 저장용
+    int idx = 0;                       // 실제 저장한 소수 개수
 
     if (p == NULL)
     {
@@ -42,7 +41,7 @@ int main(void)
 
     // 에라토스테네스의 체용 배열: 0 ~ n
     // 0 = 소수 후보, 1 = 합성수(소수 아님)
-    unsigned char *is_composite = calloc(n + 1, sizeof(unsigned char));
+    unsigned char *is_composite = calloc((size_t)n + 1, sizeof(unsigned char));
     if (is_composite == NULL)
     {
         fprintf(stderr, "체 배열 메모리 할당 실패\n");
@@ -64,7 +63,7 @@ int main(void)
         if (!is_composite[i])   // 아직 안 지워졌으면 -> 소수
         {
             // i*i부터 i의 배수들을 모두 합성수로 표시
-            for (long long j = (long long)sqrt((double)i); j <= n; j += i)
+            for (long long j = (long long)i * i; j <= n; j += i)
             {
                 is_composite[j] = 1;
             }
