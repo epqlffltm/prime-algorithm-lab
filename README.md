@@ -26,4 +26,4 @@ math.h 라이브러리를 링크하기위해 -lm 옵션이 필요할 수도 있�
 ### 1. 리포지토리 클론
 
 ```git clone [https://github.com/epqlffltm/prime-algorithm-lab.git](https://github.com/epqlffltm/prime-algorithm-lab.git)
-cd prime-algorithm-lab```
+cd prime-algorithm-lab
