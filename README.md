@@ -18,7 +18,7 @@
 
 ##  설치 및 실행 방법 (Installation & Usage)
 
-```gcc -o prime main.c -lm```
+```gcc -o prime main.c -lm
 
 math.h 라이브러리를 링크하기위해 -lm 옵션이 필요할 수도 있습니다.
 이 프로젝트는 리눅스/유닉스 환경(macOS 포함)에서 실행하는 것을 권장합니다.
