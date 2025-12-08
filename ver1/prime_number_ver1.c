@@ -62,10 +62,10 @@ int main(void)
     printf("걸린 시간: %lld microseconds\n", end - start);
 
     // 소수 출력
-    printf("소수 목록: ");
-    for (int i = 0; i < idx; i++)
-        printf("%d ", p[i]);
-    putchar('\n');
+    //printf("소수 목록: ");
+    //for (int i = 0; i < idx; i++)
+        //printf("%d ", p[i]);
+    //putchar('\n');
 
     free(p);
     return 0;

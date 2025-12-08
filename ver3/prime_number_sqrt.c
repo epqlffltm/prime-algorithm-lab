@@ -85,10 +85,10 @@ int main(void)
     printf("걸린 시간: %lld microseconds\n", end - start);
 
     // 소수 출력
-    printf("소수 목록 (%d개, 최대 %d개까지만 저장): ", idx, MAX);
-    for (int i = 0; i < idx; i++)
-        printf("%d ", p[i]);
-    putchar('\n');
+    //printf("소수 목록 (%d개, 최대 %d개까지만 저장): ", idx, MAX);
+    //for (int i = 0; i < idx; i++)
+        //printf("%d ", p[i]);
+    //putchar('\n');
 
     free(is_composite);
     free(p);

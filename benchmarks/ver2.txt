@@ -1,0 +1,21 @@
+
+정수 입력: 100
+걸린 시간: 3 microseconds
+
+정수 입력: 1000
+걸린 시간: 13 microseconds
+
+정수 입력: 10000
+걸린 시간: 135 microseconds
+
+정수 입력: 100000
+걸린 시간: 2575 microseconds
+
+정수 입력: 1000000
+걸린 시간: 56780 microseconds
+
+정수 입력: 10000000
+걸린 시간: 1318428 microseconds
+
+정수 입력: 100000000
+걸린 시간: 35512093 microseconds
