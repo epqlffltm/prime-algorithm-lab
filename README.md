@@ -181,6 +181,9 @@ ver3_us : 에라토스테네스의 체 버전
 benchmarks/timeing.cvs 를 기반으로, python_code/timing_graph.py로
 각 버전의 실행 시간을 시각화했습니다.
 
+![Prime timing graph](benchmarks/prime_timing.png)
+
+
 ---
 
 실행 예시 스크린샷
@@ -214,5 +217,7 @@ C 컴파일러: gcc (WSL/리눅스 환경 기준)
 #향후 계획 (TODO)
 
 c++의 멀티스레드 기능을 사용한 ver4 코딩
+
+밀러-라빈 판정법을 사용한 ver5코딩과 이를 활용한 RSA 암호화 학습(실사용 용도 아님!)
 
 Makefile 도입으로 make ver1, make ver2, make ver3, make bench 등 자동화
