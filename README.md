@@ -112,7 +112,7 @@ gcc ver2/*.c -o bin/ver2 -lm
 ver3 — 에라토스테네스의 체 버전
 # 빌드
 ```
-gcc ver3/*.c -o bin/ver3
+gcc ver3/*.c -o bin/ver3 -lm
 ```
 # 실행
 ```
